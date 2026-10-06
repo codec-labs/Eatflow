@@ -25,7 +25,7 @@
     <section class="legal-content">
         <div class="container">
             <h2>Datenschutzerklärung</h2>
-            <p class="legal-date"><strong>Stand: 30. Januar 2026</strong></p>
+            <p class="legal-date"><strong>Stand: 6. Oktober 2026</strong></p>
 
             <div class="legal-section">
                 <h3>Verantwortlicher</h3>
@@ -41,61 +41,64 @@
             </div>
 
             <div class="legal-section">
-                <h3>1. Datenverarbeitung in eatflow</h3>
+                <h3>1. Grundsatz: Deine Daten bleiben auf deinem iPhone</h3>
                 <p>
-                    eatflow benötigt eine <strong>Internet-Verbindung</strong>. Um deinen personalisierten Ernährungsplan zu erstellen, werden deine Eingaben an <strong>Google Gemini API</strong> übertragen.
-                </p>
-                <p><strong>Folgende Eingaben werden von dir eingegeben und an Google Gemini gesendet</strong>:</p>
-                <ul class="legal-list">
-                    <li>Monatliches Budget</li>
-                    <li>Anzahl Personen</li>
-                    <li>Körpergröße und Gewicht</li>
-                    <li>Ernährungsweise & Vorlieben (z. B. High Protein, bio, nachhaltig)</li>
-                    <li>Optional: Alter, Aktivitätslevel, Mahlzeiten-Logs, Gewichts-Tracking</li>
-                </ul>
-            </div>
-
-            <div class="legal-section">
-                <h3>2. KI-Verarbeitung durch Google Gemini</h3>
-                <p>
-                    Die Berechnung deines Ernährungsplans erfolgt mit <strong>Google Gemini API</strong>. Deine Eingaben (Budget, Personenanzahl, Größe, Gewicht, Ernährungsweise, Fokus) werden an Google übertragen, um dir:
-                </p>
-                <ul class="legal-list">
-                    <li>Einen wöchentlichen Meal Plan mit passenden Rezepten zu generieren</li>
-                    <li>Eine automatische Einkaufsliste zu erstellen</li>
-                    <li>Kalorien und Makronährstoffe zu berechnen</li>
-                </ul>
-                <p>
-                    <strong>Datenschutz bei Google:</strong> Google speichert und verarbeitet diese Daten gemäß seiner <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung</a>.
+                    eatflow speichert deine Angaben (Körpergröße, Gewicht, Alter, Aktivitätslevel, Ziel, Ernährungsweise, Unverträglichkeiten, Wochenplan, Kalorien-Einträge, Notizen) <strong>ausschließlich lokal auf deinem Gerät</strong>. Dein Ernährungsplan wird direkt in der App berechnet. Es gibt kein Benutzerkonto, keine Werbung, keine Analytics- oder Tracking-Tools und keinen Verkauf von Daten.
                 </p>
             </div>
 
             <div class="legal-section">
-                <h3>3. Weitergabe von Daten</h3>
+                <h3>2. Apple Health (HealthKit)</h3>
+                <p>
+                    Wenn du es in der App erlaubst, <strong>liest</strong> eatflow folgende Werte aus Apple Health, um sie im Bereich „Meine Übersicht“ anzuzeigen:
+                </p>
                 <ul class="legal-list">
-                    <li><strong>Google Gemini:</strong> Deine Eingaben werden an Google Gemini gesendet zur KI-Verarbeitung</li>
-                    <li>Keine Analytics-Tools (außer Google Gemini)</li>
-                    <li>Keine Werbung</li>
-                    <li>Keine Daten für Profiling oder Verkauf an Dritte (außer Google)</li>
+                    <li>Schritte, Distanz, gestiegene Etagen, Trainingsminuten und Stehstunden</li>
+                    <li>Aktive Energie und Ruheenergie (verbrannte Kalorien)</li>
+                    <li>Ruhepuls, Schlafdauer, Körpergewicht und getrunkenes Wasser</li>
                 </ul>
+                <p>
+                    eatflow hat <strong>nur Lesezugriff</strong> und schreibt nichts in Apple Health. Die Health-Daten werden <strong>nur auf deinem Gerät angezeigt</strong>, nicht gespeichert, nicht an uns oder Dritte übertragen und nicht für Werbung, Marketing oder Profiling verwendet. Den Zugriff kannst du jederzeit in der Health-App unter <em>Profil → Apps → eatflow</em> ändern oder widerrufen.
+                </p>
             </div>
 
             <div class="legal-section">
-                <h3>4. Deine Rechte & Datenlöschung</h3>
+                <h3>3. KI-Coach (Pro-Funktion)</h3>
                 <p>
-                    Du kannst deine Daten in der App löschen:
+                    Wenn du dem KI-Coach eine Frage stellst, wird diese Frage zusammen mit einem kurzen Kontext (deine Ernährungsweise, dein Fokus und die Namen der für heute geplanten Gerichte) über eine verschlüsselte Verbindung an unseren eigenen Server gesendet und dort an <strong>Anthropic (Claude)</strong> zur Beantwortung weitergeleitet. Zur Prüfung deines Abos wird der von Apple signierte Kaufnachweis mitgeschickt, für das Wochenlimit eine anonyme, zufällige Geräte-Kennung.
+                </p>
+                <p>
+                    Es werden dabei <strong>keine</strong> Körperdaten und <strong>keine</strong> Apple-Health-Daten übertragen. Unser Server speichert keine Chat-Inhalte. Anthropic verarbeitet die Anfragen gemäß seiner <a href="https://www.anthropic.com/legal/privacy" target="_blank">Datenschutzerklärung</a> und nutzt sie nicht zum Training seiner Modelle.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h3>4. Barcode-Scanner</h3>
+                <p>
+                    Beim Scannen eines Produkts wird nur die <strong>Barcode-Nummer</strong> an die offene Lebensmitteldatenbank <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts</a> gesendet, um Nährwerte abzurufen. Das Lesen einer Nährwerttabelle per Foto passiert vollständig auf deinem Gerät.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h3>5. Abos und Zahlungen</h3>
+                <p>
+                    Käufe und Abos werden vollständig über Apple abgewickelt. Wir erhalten keine Zahlungsdaten. Es gelten die Datenschutzbestimmungen von Apple.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h3>6. Deine Rechte & Datenlöschung</h3>
+                <p>
+                    Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung sowie das Recht auf Beschwerde bei der österreichischen Datenschutzbehörde (<a href="https://www.dsb.gv.at" target="_blank">dsb.gv.at</a>). Da deine Daten nur auf deinem Gerät liegen, kannst du sie jederzeit selbst löschen:
                 </p>
                 <p class="code-block">
-                    App öffnen → Einstellungen → „Alle Daten löschen"
+                    App öffnen → Einstellungen → „Alle Daten löschen“
                 </p>
-                <p>
-                    <strong>Hinweis:</strong> Google speichert deine Daten gemäß ihrer Datenschutzerklärung. Für Anfragen zu Google-Daten wende dich an Google direkt.
-                </p>
-                <p>Bei Fragen zu eatflow: Schreib uns unter <a href="mailto:oliverbrandl94@gmail.com">oliverbrandl94@gmail.com</a> oder ruf an: <a href="tel:+43677624356850">+43 677 62435685</a></p>
+                <p>Das Löschen der App entfernt ebenfalls alle lokal gespeicherten Daten. Bei Fragen: <a href="mailto:oliverbrandl94@gmail.com">oliverbrandl94@gmail.com</a> oder <a href="tel:+43677624356850">+43 677 62435685</a></p>
             </div>
 
             <div class="legal-section">
-                <h3>5. Änderungen dieser Erklärung</h3>
+                <h3>7. Änderungen dieser Erklärung</h3>
                 <p>
                     Diese Datenschutzerklärung kann sich ändern. Die aktuelle Version ist immer hier verfügbar.
                 </p>
